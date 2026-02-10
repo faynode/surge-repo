@@ -1,0 +1,60 @@
+# NAME: LAN-Private (Malaysia Optimized)
+# DESCRIPTION: Local LAN + Private IP direct rules for MY ISPs
+# UPDATED: 2026
+# ------------------------------------------------------------
+
+# ===== Localhost =====
+IP-CIDR,127.0.0.0/8,DIRECT
+IP-CIDR,0.0.0.0/32,DIRECT
+
+# ===== Link-Local IPv4 =====
+IP-CIDR,169.254.0.0/16,DIRECT
+
+# ===== Private LAN IPv4 =====
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+
+# ===== Malaysian ISP Router Default Subnets =====
+# (Unifi, Maxis, DIGI, Celcom, TIME Home Routers)
+IP-CIDR,192.168.0.0/24,DIRECT
+IP-CIDR,192.168.1.0/24,DIRECT
+IP-CIDR,192.168.100.0/24,DIRECT
+IP-CIDR,192.168.254.0/24,DIRECT
+IP-CIDR,192.168.8.0/24,DIRECT     # Huawei Router
+IP-CIDR,192.168.3.0/24,DIRECT     # TP-Link Deco
+IP-CIDR,192.168.50.0/24,DIRECT    # Asus Router
+
+# ===== Common IoT Device Ranges =====
+IP-CIDR,192.168.10.0/24,DIRECT    # CCTV / DVR / NVR
+IP-CIDR,192.168.11.0/24,DIRECT
+IP-CIDR,192.168.88.0/24,DIRECT    # MikroTik
+IP-CIDR,192.168.31.0/24,DIRECT    # Xiaomi Router
+
+# ===== Private IPv6 =====
+IP-CIDR,::1/128,DIRECT
+IP-CIDR,fc00::/7,DIRECT
+IP-CIDR,fe80::/10,DIRECT
+
+# ===== Multicast / mDNS / UPNP =====
+IP-CIDR,224.0.0.0/4,DIRECT
+IP-CIDR,239.255.255.250/32,DIRECT     # SSDP
+IP-CIDR,224.0.0.251/32,DIRECT         # mDNS
+
+# ===== Domains for LAN devices =====
+DOMAIN-SUFFIX,local,DIRECT
+DOMAIN-SUFFIX,lan,DIRECT
+DOMAIN-SUFFIX,home.arpa,DIRECT
+DOMAIN-SUFFIX,router,DIRECT
+DOMAIN-SUFFIX,localdomain,DIRECT
+
+# ===== Common Malaysian router portals =====
+DOMAIN-SUFFIX,unifi,DIRECT
+DOMAIN-SUFFIX,maxis,DIRECT
+DOMAIN-SUFFIX,digitel,DIRECT
+DOMAIN-SUFFIX,celcom,DIRECT
+DOMAIN-SUFFIX,asusrouter.com,DIRECT
+DOMAIN-SUFFIX,homerouter.cpe,DIRECT
+DOMAIN-SUFFIX,tendawifi.com,DIRECT
+
+# END
