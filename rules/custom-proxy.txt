@@ -1,2 +1,0 @@
-DOMAIN-SUFFIX,snssdk.com
-DOMAIN-SUFFIX,amemv.com
