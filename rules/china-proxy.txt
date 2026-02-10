@@ -1,0 +1,4 @@
+# china douyin
+
+DOMAIN-KEYWORD,amemv
+DOMAIN-KEYWORD,snssdk
