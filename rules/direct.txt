@@ -47,6 +47,7 @@ DOMAIN-SUFFIX,ambankgroup.com
 DOMAIN-SUFFIX,publicbank.com.my
 DOMAIN-SUFFIX,rhbgroup.com
 DOMAIN-SUFFIX,cimbocto.com.my
+
 # Malaysia Telcos
 DOMAIN-SUFFIX,maxis.com.my
 DOMAIN-SUFFIX,digi.com.my
@@ -138,5 +139,5 @@ USER-AGENT,XLNetAccelerator*
 
 
 # School domain name is directly connected (avoid unnecessary detours)
-DOMAIN-SUFFIX,stu.jhc.edu
-DOMAIN-SUFFIX,jhc.edu
+DOMAIN-SUFFIX,stu.jjc.edu
+DOMAIN-SUFFIX,jjc.edu
