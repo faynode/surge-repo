@@ -1,37 +1,120 @@
-# Douyin Ads (safe)
+# NAME: AdBlock Full (Malaysia + China Apps Safe)
+# DESCRIPTION: Comprehensive ad block rules without breaking Douyin, Netease, Tencent, iQIYI
+# UPDATED: 2026
+# --------------------------------------------------------
+
+# ================================
+# 1. Douyin (China) – Safe Ads Block
+# ================================
 DOMAIN-SUFFIX,ad.zijieapi.com
 DOMAIN-SUFFIX,ad.bytedance.com
-DOMAIN-SUFFIX,ad-bci.byteimg.com
 DOMAIN-SUFFIX,ad-static.bytedance.com
-DOMAIN-SUFFIX,adstats.tencentmusic.com
-DOMAIN-SUFFIX,log-sdk.ksapisrv.com
-DOMAIN-SUFFIX,log-lq.snssdk.com
-DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
-DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,ad-bci.byteimg.com
 DOMAIN-SUFFIX,pangolin.snssdk.com
 DOMAIN-SUFFIX,pangolin.bytedance.com
-DOMAIN-SUFFIX,adim.pinduoduo.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,log-lq.snssdk.com
+DOMAIN-SUFFIX,log-sdk.ksapisrv.com
+
+# Prevent breaking Douyin
+DOMAIN-KEYWORD,log.snssdk.com,allow
+DOMAIN-KEYWORD,douyin,allow
 
 
-# Netease Cloud Music Ads (safe)
+# ================================
+# 2. Netease Cloud Music – Safe Ads Block
+# ================================
 DOMAIN-SUFFIX,iadmat.nosdn.127.net
 DOMAIN-SUFFIX,iadmusicmat.music.126.net
 DOMAIN-SUFFIX,iadmusicmat.music.163.com
 DOMAIN-SUFFIX,iad.g.163.com
 DOMAIN-SUFFIX,iadmat.g.163.com
-DOMAIN-SUFFIX,nstool.netease.com
-DOMAIN-SUFFIX,analytics.126.net
 DOMAIN-SUFFIX,admusicpic.music.126.net
+DOMAIN-SUFFIX,analytics.126.net
 
-# Global Safe Ads
+# Prevent breaking Netease
+DOMAIN-KEYWORD,music.163.com,allow
+DOMAIN-KEYWORD,interface.music.163.com,allow
+
+
+# ================================
+# 3. Tencent / iQIYI / Youku – Safe Ads Block
+# ================================
+DOMAIN-SUFFIX,adstats.tencentmusic.com
+DOMAIN-SUFFIX,adsmind.apdcdn.tc.qq.com
+DOMAIN-SUFFIX,adsmind.tencentmusic.com
+DOMAIN-SUFFIX,mtrace.qq.com
+
+# Prevent breaking Tencent Video / iQIYI
+DOMAIN-KEYWORD,video.qq.com,allow
+DOMAIN-KEYWORD,iqiyi.com,allow
+DOMAIN-KEYWORD,youku.com,allow
+
+
+# ================================
+# 4. Global Ads & Trackers
+# ================================
 DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,googlesyndication.com
-DOMAIN-SUFFIX,criteo.net
-DOMAIN-SUFFIX,taboola.com
-DOMAIN-SUFFIX,outbrain.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googleoptimize.com
 DOMAIN-SUFFIX,adnxs.com
-DOMAIN-SUFFIX,adcolony.com
-DOMAIN-SUFFIX,mopub.com
+DOMAIN-SUFFIX,criteo.com
+DOMAIN-SUFFIX,criteo.net
+DOMAIN-SUFFIX,outbrain.com
+DOMAIN-SUFFIX,taboola.com
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,scorecardresearch.com
+DOMAIN-SUFFIX,quantserve.com
+
+
+# ================================
+# 5. App Ads (Unity / Applovin / Mopub)
+# ================================
+DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN-SUFFIX,unityads.com
 DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,applvn.com
+DOMAIN-SUFFIX,mopub.com
+
+
+# ================================
+# 6. Malaysia-focused Ad Networks
+# ================================
+DOMAIN-SUFFIX,innity.com
+DOMAIN-SUFFIX,nativeads.com
+DOMAIN-SUFFIX,admya.com
+DOMAIN-SUFFIX,pushengage.com
+
+
+# ================================
+# 7. Video Popup / Malware / Spam
+# ================================
+DOMAIN-SUFFIX,clickadu.com
+DOMAIN-SUFFIX,clickcamo.com
+DOMAIN-SUFFIX,pubmatic.com
+DOMAIN-SUFFIX,zedo.com
+DOMAIN-SUFFIX,exdynsrv.com
+DOMAIN-SUFFIX,adplayer.pro
+DOMAIN-SUFFIX,vidoomy.com
+DOMAIN-SUFFIX,trafficfactory.biz
+
+
+# ================================
+# 8. Generic Ad Keywords (Safe)
+# ================================
+DOMAIN-KEYWORD,adservice
+DOMAIN-KEYWORD,adsystem
+DOMAIN-KEYWORD,advertising
+DOMAIN-KEYWORD,tracking
+DOMAIN-KEYWORD,trackevent
+DOMAIN-KEYWORD,monitor
+DOMAIN-KEYWORD,analytics
+DOMAIN-KEYWORD,logevent
+
+# END
