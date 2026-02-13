@@ -1,9 +1,12 @@
 # NAME: Proxy (Malaysia Optimized) - proxy.txt
 # REGION: MY
 # DESCRIPTION: Proxy rules for Facebook, Instagram, X, TikTok, AI, Streaming, China sites
+# UPDATED: Full & Complete Version
 # ---------------------------------------------
 
-# Facebook/社交（即使本地 CDN 也走 Proxy）
+#############################################
+# Facebook / Meta / 社交（即使本地 CDN 也走 Proxy）
+#############################################
 IP-CIDR,157.240.236.0/24,Proxy,no-resolve
 IP-CIDR,163.70.137.0/24,Proxy,no-resolve
 IP-CIDR,157.240.211.0/24,Proxy,no-resolve
@@ -20,45 +23,89 @@ DOMAIN-SUFFIX,instagram.com,Proxy
 DOMAIN-SUFFIX,cdninstagram.com,Proxy,no-resolve
 DOMAIN-SUFFIX,whatsapp.com,Proxy
 DOMAIN-SUFFIX,whatsapp.net,Proxy
+DOMAIN-SUFFIX,meta.com,Proxy
+DOMAIN-SUFFIX,oculus.com,Proxy
+
+#############################################
+# X / Twitter / Snapchat
+#############################################
 DOMAIN-SUFFIX,x.com,Proxy
 DOMAIN-SUFFIX,twitter.com,Proxy
 DOMAIN-SUFFIX,twimg.com,Proxy
 DOMAIN-SUFFIX,snapchat.com,Proxy
+DOMAIN-SUFFIX,sc-cdn.net,Proxy
 
-# TikTok 海外
+#############################################
+# TikTok 海外（防止走 CN CDN）
+#############################################
 DOMAIN-SUFFIX,tiktok.com,Proxy
+DOMAIN-SUFFIX,tiktokcdn.com,Proxy
 DOMAIN-SUFFIX,byteoversea.com,Proxy
+DOMAIN-SUFFIX,ibyteimg.com,Proxy
+DOMAIN-SUFFIX,muscdn.com,Proxy
 DOMAIN-KEYWORD,tiktokcdn,Proxy
 
-# 流媒体
+#############################################
+# 流媒体（Netflix / Disney / HBO / Spotify）
+#############################################
 DOMAIN-SUFFIX,netflix.com,Proxy
 DOMAIN-SUFFIX,netflix.net,Proxy
 DOMAIN-SUFFIX,netflixdnstest0.com,Proxy
+DOMAIN-SUFFIX,nflxvideo.net,Proxy
+DOMAIN-SUFFIX,nflximg.net,Proxy
+
 DOMAIN-SUFFIX,disneyplus.com,Proxy
+DOMAIN-SUFFIX,dssott.com,Proxy
+
 DOMAIN-SUFFIX,hulu.com,Proxy
 DOMAIN-SUFFIX,primevideo.com,Proxy
+DOMAIN-SUFFIX,amazonvideo.com,Proxy
+
 DOMAIN-SUFFIX,hbonow.com,Proxy
 DOMAIN-SUFFIX,hbomax.com,Proxy
-DOMAIN-SUFFIX,spotify.com,Proxy
+DOMAIN-SUFFIX,max.com,Proxy
 
-# AI 全家桶
+DOMAIN-SUFFIX,spotify.com,Proxy
+DOMAIN-SUFFIX,spotifycdn.com,Proxy
+DOMAIN-SUFFIX,deezer.com,Proxy
+
+DOMAIN-SUFFIX,youtube.com,Proxy
+DOMAIN-SUFFIX,googlevideo.com,Proxy
+
+#############################################
+# AI 全家桶（必须全部走 Proxy）
+#############################################
 DOMAIN-SUFFIX,openai.com,Proxy
 DOMAIN-SUFFIX,chatgpt.com,Proxy
+DOMAIN-SUFFIX,oaistatic.com,Proxy
+DOMAIN-SUFFIX,oaiusercontent.com,Proxy
+
 DOMAIN-SUFFIX,anthropic.com,Proxy
 DOMAIN-SUFFIX,claude.ai,Proxy
 DOMAIN-SUFFIX,poe.com,Proxy
 DOMAIN-SUFFIX,perplexity.ai,Proxy
+DOMAIN-SUFFIX,cohere.ai,Proxy
+DOMAIN-SUFFIX,replicate.com,Proxy
+DOMAIN-SUFFIX,huggingface.co,Proxy
 DOMAIN-SUFFIX,gemini.google.com,Proxy
 DOMAIN-SUFFIX,notion.com,Proxy
+
 DOMAIN-KEYWORD,openai,Proxy
 DOMAIN-KEYWORD,anthropic,Proxy
 DOMAIN-KEYWORD,perplexity,Proxy
 DOMAIN-KEYWORD,ollama,Proxy
+DOMAIN-KEYWORD,ai,Proxy
 
-# 开发者 + 中国网站
+#############################################
+# 开发者 / 技术社区 / 中国网站
+#############################################
 DOMAIN-SUFFIX,github.com,Proxy
 DOMAIN-SUFFIX,githubusercontent.com,Proxy
+DOMAIN-SUFFIX,githubassets.com,Proxy
 DOMAIN-SUFFIX,gitlab.com,Proxy
+DOMAIN-SUFFIX,stackoverflow.com,Proxy
+DOMAIN-SUFFIX,stackexchange.com,Proxy
+
 DOMAIN-SUFFIX,bilibili.com,Proxy
 DOMAIN-SUFFIX,bilivideo.com,Proxy
 DOMAIN-SUFFIX,zhihu.com,Proxy
@@ -66,23 +113,39 @@ DOMAIN-SUFFIX,v2ex.com,Proxy
 DOMAIN-SUFFIX,sspai.com,Proxy
 DOMAIN-SUFFIX,acfun.cn,Proxy
 DOMAIN-SUFFIX,weibo.com,Proxy
+DOMAIN-SUFFIX,douyin.com,Proxy
+DOMAIN-SUFFIX,xiaohongshu.com,Proxy
 
-# 游戏/Google/Apple/港台日/Telegram
+#############################################
+# Google / Apple / 游戏 / Telegram / 港台日
+#############################################
+DOMAIN-SUFFIX,google.com,Proxy
 DOMAIN-SUFFIX,googlesource.com,Proxy
 DOMAIN-SUFFIX,gstatic.com,Proxy
+DOMAIN-SUFFIX,googleapis.com,Proxy
 DOMAIN-SUFFIX,googleapis.cn,Proxy
+DOMAIN-SUFFIX,googleusercontent.com,Proxy
+
+DOMAIN-SUFFIX,apple.com,Proxy
+DOMAIN-SUFFIX,icloud.com,Proxy
 DOMAIN-SUFFIX,appsto.re,Proxy
+DOMAIN-SUFFIX,itunes.apple.com,Proxy
 DOMAIN-KEYWORD,testflight,Proxy
+
 DOMAIN-SUFFIX,epicgames.com,Proxy
 DOMAIN-SUFFIX,steampowered.com,Proxy
+DOMAIN-SUFFIX,steamcommunity.com,Proxy
 DOMAIN-SUFFIX,ea.com,Proxy
 DOMAIN-SUFFIX,playstation.com,Proxy
 DOMAIN-SUFFIX,xboxlive.com,Proxy
 DOMAIN-SUFFIX,battle.net,Proxy
 DOMAIN-SUFFIX,blizzard.com,Proxy
 DOMAIN-SUFFIX,rockstargames.com,Proxy
+
 DOMAIN-SUFFIX,telegram.org,Proxy
 DOMAIN-SUFFIX,t.me,Proxy
+DOMAIN-SUFFIX,telegra.ph,Proxy
+
 DOMAIN-SUFFIX,ptt.cc,Proxy
 DOMAIN-SUFFIX,lihkg.com,Proxy
 DOMAIN-SUFFIX,niconico.jp,Proxy
@@ -90,16 +153,25 @@ DOMAIN-SUFFIX,pixiv.net,Proxy
 DOMAIN-SUFFIX,line.me,Proxy
 DOMAIN-SUFFIX,line-apps.com,Proxy
 
-# ASN + IP（Telegram）
+#############################################
+# ASN / IP（Telegram & 常见受限资源）
+#############################################
 IP-ASN,44907,Proxy
 IP-ASN,62014,Proxy
 IP-ASN,59930,Proxy
 IP-ASN,62041,Proxy
 IP-ASN,211157,Proxy
+
 IP-CIDR,5.28.192.0/18,Proxy
+IP-CIDR,91.108.0.0/16,Proxy
 IP-CIDR,109.239.140.0/24,Proxy
 
+#############################################
+# 兜底防漏
+#############################################
 DOMAIN-KEYWORD,proxy,Proxy
 DOMAIN-KEYWORD,geoblock,Proxy
+DOMAIN-KEYWORD,fbcdn,Proxy
+DOMAIN-KEYWORD,cdninstagram,Proxy
 
 # END
