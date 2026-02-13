@@ -1,120 +1,90 @@
 # NAME: AdBlock Full (Malaysia + China Apps Safe)
-# DESCRIPTION: Comprehensive ad block rules without breaking Douyin, Netease, Tencent, iQIYI
-# UPDATED: 2026
+# DESCRIPTION: Comprehensive ad block (Douyin/Netease safe)
 # --------------------------------------------------------
 
-# ================================
-# 1. Douyin (China) – Safe Ads Block
-# ================================
-DOMAIN-SUFFIX,ad.zijieapi.com
-DOMAIN-SUFFIX,ad.bytedance.com
-DOMAIN-SUFFIX,ad-static.bytedance.com
-DOMAIN-SUFFIX,ad-bci.byteimg.com
-DOMAIN-SUFFIX,pangolin.snssdk.com
-DOMAIN-SUFFIX,pangolin.bytedance.com
-DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
-DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
-DOMAIN-SUFFIX,log-lq.snssdk.com
-DOMAIN-SUFFIX,log-sdk.ksapisrv.com
+# 1. Douyin Safe Ads Block
+DOMAIN-SUFFIX,ad.zijieapi.com,REJECT
+DOMAIN-SUFFIX,ad.bytedance.com,REJECT
+DOMAIN-SUFFIX,ad-static.bytedance.com,REJECT
+DOMAIN-SUFFIX,ad-bci.byteimg.com,REJECT
+DOMAIN-SUFFIX,pangolin.snssdk.com,REJECT
+DOMAIN-SUFFIX,pangolin.bytedance.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,log-lq.snssdk.com,REJECT
+DOMAIN-SUFFIX,log-sdk.ksapisrv.com,REJECT
 
-# Prevent breaking Douyin
-DOMAIN-KEYWORD,log.snssdk.com,allow
-DOMAIN-KEYWORD,douyin,allow
+# Prevent breaking Douyin (放最后，高优先级)
+DOMAIN-KEYWORD,log.snssdk.com,DIRECT
+DOMAIN-KEYWORD,douyin,DIRECT
 
+# 2. Netease Cloud Music Safe
+DOMAIN-SUFFIX,iadmat.nosdn.127.net,REJECT
+DOMAIN-SUFFIX,iadmusicmat.music.126.net,REJECT
+DOMAIN-SUFFIX,iadmusicmat.music.163.com,REJECT
+DOMAIN-SUFFIX,iad.g.163.com,REJECT
+DOMAIN-SUFFIX,iadmat.g.163.com,REJECT
+DOMAIN-SUFFIX,admusicpic.music.126.net,REJECT
+DOMAIN-SUFFIX,analytics.126.net,REJECT
+DOMAIN-KEYWORD,music.163.com,DIRECT
+DOMAIN-KEYWORD,interface.music.163.com,DIRECT
 
-# ================================
-# 2. Netease Cloud Music – Safe Ads Block
-# ================================
-DOMAIN-SUFFIX,iadmat.nosdn.127.net
-DOMAIN-SUFFIX,iadmusicmat.music.126.net
-DOMAIN-SUFFIX,iadmusicmat.music.163.com
-DOMAIN-SUFFIX,iad.g.163.com
-DOMAIN-SUFFIX,iadmat.g.163.com
-DOMAIN-SUFFIX,admusicpic.music.126.net
-DOMAIN-SUFFIX,analytics.126.net
+# 3. Tencent/iQIYI/Youku Safe
+DOMAIN-SUFFIX,adstats.tencentmusic.com,REJECT
+DOMAIN-SUFFIX,adsmind.apdcdn.tc.qq.com,REJECT
+DOMAIN-SUFFIX,adsmind.tencentmusic.com,REJECT
+DOMAIN-SUFFIX,mtrace.qq.com,REJECT
+DOMAIN-KEYWORD,video.qq.com,DIRECT
+DOMAIN-KEYWORD,iqiyi.com,DIRECT
+DOMAIN-KEYWORD,youku.com,DIRECT
 
-# Prevent breaking Netease
-DOMAIN-KEYWORD,music.163.com,allow
-DOMAIN-KEYWORD,interface.music.163.com,allow
-
-
-# ================================
-# 3. Tencent / iQIYI / Youku – Safe Ads Block
-# ================================
-DOMAIN-SUFFIX,adstats.tencentmusic.com
-DOMAIN-SUFFIX,adsmind.apdcdn.tc.qq.com
-DOMAIN-SUFFIX,adsmind.tencentmusic.com
-DOMAIN-SUFFIX,mtrace.qq.com
-
-# Prevent breaking Tencent Video / iQIYI
-DOMAIN-KEYWORD,video.qq.com,allow
-DOMAIN-KEYWORD,iqiyi.com,allow
-DOMAIN-KEYWORD,youku.com,allow
-
-
-# ================================
 # 4. Global Ads & Trackers
-# ================================
-DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,googlesyndication.com
-DOMAIN-SUFFIX,googleadservices.com
-DOMAIN-SUFFIX,googletagservices.com
-DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,googleoptimize.com
-DOMAIN-SUFFIX,adnxs.com
-DOMAIN-SUFFIX,criteo.com
-DOMAIN-SUFFIX,criteo.net
-DOMAIN-SUFFIX,outbrain.com
-DOMAIN-SUFFIX,taboola.com
-DOMAIN-SUFFIX,branch.io
-DOMAIN-SUFFIX,adjust.com
-DOMAIN-SUFFIX,appsflyer.com
-DOMAIN-SUFFIX,scorecardresearch.com
-DOMAIN-SUFFIX,quantserve.com
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+DOMAIN-SUFFIX,googlesyndication.com,REJECT
+DOMAIN-SUFFIX,googleadservices.com,REJECT
+DOMAIN-SUFFIX,googletagservices.com,REJECT
+DOMAIN-SUFFIX,googletagmanager.com,REJECT
+DOMAIN-SUFFIX,googleoptimize.com,REJECT
+DOMAIN-SUFFIX,adnxs.com,REJECT
+DOMAIN-SUFFIX,criteo.com,REJECT
+DOMAIN-SUFFIX,criteo.net,REJECT
+DOMAIN-SUFFIX,outbrain.com,REJECT
+DOMAIN-SUFFIX,taboola.com,REJECT
+DOMAIN-SUFFIX,branch.io,REJECT
+DOMAIN-SUFFIX,adjust.com,REJECT
+DOMAIN-SUFFIX,appsflyer.com,REJECT
+DOMAIN-SUFFIX,scorecardresearch.com,REJECT
+DOMAIN-SUFFIX,quantserve.com,REJECT
 
+# 5. App Ads
+DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
+DOMAIN-SUFFIX,unityads.com,REJECT
+DOMAIN-SUFFIX,applovin.com,REJECT
+DOMAIN-SUFFIX,applvn.com,REJECT
+DOMAIN-SUFFIX,mopub.com,REJECT
 
-# ================================
-# 5. App Ads (Unity / Applovin / Mopub)
-# ================================
-DOMAIN-SUFFIX,unityads.unity3d.com
-DOMAIN-SUFFIX,unityads.com
-DOMAIN-SUFFIX,applovin.com
-DOMAIN-SUFFIX,applvn.com
-DOMAIN-SUFFIX,mopub.com
+# 6. Malaysia Ads (Innity 是 MY 大广告商)
+DOMAIN-SUFFIX,innity.com,REJECT
+DOMAIN-SUFFIX,nativeads.com,REJECT
+DOMAIN-SUFFIX,admya.com,REJECT
+DOMAIN-SUFFIX,pushengage.com,REJECT
 
+# 7. Video Popup/Malware
+DOMAIN-SUFFIX,clickadu.com,REJECT
+DOMAIN-SUFFIX,clickcamo.com,REJECT
+DOMAIN-SUFFIX,pubmatic.com,REJECT
+DOMAIN-SUFFIX,zedo.com,REJECT
+DOMAIN-SUFFIX,exdynsrv.com,REJECT
+DOMAIN-SUFFIX,adplayer.pro,REJECT
+DOMAIN-SUFFIX,vidoomy.com,REJECT
+DOMAIN-SUFFIX,trafficfactory.biz,REJECT
 
-# ================================
-# 6. Malaysia-focused Ad Networks
-# ================================
-DOMAIN-SUFFIX,innity.com
-DOMAIN-SUFFIX,nativeads.com
-DOMAIN-SUFFIX,admya.com
-DOMAIN-SUFFIX,pushengage.com
-
-
-# ================================
-# 7. Video Popup / Malware / Spam
-# ================================
-DOMAIN-SUFFIX,clickadu.com
-DOMAIN-SUFFIX,clickcamo.com
-DOMAIN-SUFFIX,pubmatic.com
-DOMAIN-SUFFIX,zedo.com
-DOMAIN-SUFFIX,exdynsrv.com
-DOMAIN-SUFFIX,adplayer.pro
-DOMAIN-SUFFIX,vidoomy.com
-DOMAIN-SUFFIX,trafficfactory.biz
-
-
-# ================================
-# 8. Generic Ad Keywords (Safe)
-# ================================
-DOMAIN-KEYWORD,adservice
-DOMAIN-KEYWORD,adsystem
-DOMAIN-KEYWORD,advertising
-DOMAIN-KEYWORD,tracking
-DOMAIN-KEYWORD,trackevent
-DOMAIN-KEYWORD,monitor
-DOMAIN-KEYWORD,analytics
-DOMAIN-KEYWORD,logevent
-
-# END
+# 8. Generic Keywords (谨慎，后续 allow 会覆盖)
+DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-KEYWORD,adsystem,REJECT
+DOMAIN-KEYWORD,advertising,REJECT
+DOMAIN-KEYWORD,tracking,REJECT
+DOMAIN-KEYWORD,trackevent,REJECT
+DOMAIN-KEYWORD,monitor,REJECT
+DOMAIN-KEYWORD,analytics,REJECT
+DOMAIN-KEYWORD,logevent,REJECT
