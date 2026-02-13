@@ -75,8 +75,8 @@ DOMAIN-SUFFIX,googlevideo.com,Proxy
 #############################################
 # AI 全家桶（必须全部走 Proxy）
 #############################################
-DOMAIN-SUFFIX,openai.com,Proxy
-DOMAIN-SUFFIX,chatgpt.com,Proxy
+# DOMAIN-SUFFIX,openai.com,Proxy
+# DOMAIN-SUFFIX,chatgpt.com,Proxy
 DOMAIN-SUFFIX,oaistatic.com,Proxy
 DOMAIN-SUFFIX,oaiusercontent.com,Proxy
 
@@ -90,11 +90,11 @@ DOMAIN-SUFFIX,huggingface.co,Proxy
 DOMAIN-SUFFIX,gemini.google.com,Proxy
 DOMAIN-SUFFIX,notion.com,Proxy
 
-DOMAIN-KEYWORD,openai,Proxy
+# DOMAIN-KEYWORD,openai,Proxy
 DOMAIN-KEYWORD,anthropic,Proxy
 DOMAIN-KEYWORD,perplexity,Proxy
 DOMAIN-KEYWORD,ollama,Proxy
-DOMAIN-KEYWORD,ai,Proxy
+# DOMAIN-KEYWORD,ai,Proxy
 
 #############################################
 # 开发者 / 技术社区 / 中国网站
