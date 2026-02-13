@@ -2,3 +2,5 @@
 
 DOMAIN-KEYWORD,amemv
 DOMAIN-KEYWORD,snssdk
+
+DOMAIN-SUFFIX,zjcdn.com
