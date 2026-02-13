@@ -6,7 +6,13 @@
 
 # 社交媒体 Proxy（在马来西亚常被限速或不稳定）
 DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,m.facebook.com
+DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbaddins.com
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,whatsapp.net
