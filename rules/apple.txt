@@ -1,85 +1,84 @@
 # NAME: Apple (Malaysia Optimized)
 # REGION: MY
-# DESCRIPTION: Apple service rules optimized for Malaysia ISP (Maxis, Digi, Celcom, U Mobile, Unifi)
-# UPDATED: 2026
+# DESCRIPTION: Apple services for Maxis/Digi/Unifi (most DIRECT, TestFlight Proxy)
 # ----------------------------------------------------
 
-# 🔵 Apple ID / iCloud / iMessage / FaceTime（全部直连）
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,me.com
-DOMAIN-SUFFIX,apple-cloudkit.com
-DOMAIN-SUFFIX,appleid.apple.com
-DOMAIN-SUFFIX,apple.com.cn
-DOMAIN-SUFFIX,ess.apple.com
-DOMAIN,init.ess.apple.com
-DOMAIN,gsa.apple.com
+# 🔵 Apple ID / iCloud / iMessage / FaceTime（直连）
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,icloud.com,DIRECT
+DOMAIN-SUFFIX,icloud-content.com,DIRECT
+DOMAIN-SUFFIX,me.com,DIRECT
+DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+DOMAIN-SUFFIX,appleid.apple.com,DIRECT
+DOMAIN-SUFFIX,apple.com.cn,DIRECT
+DOMAIN-SUFFIX,ess.apple.com,DIRECT
+DOMAIN,init.ess.apple.com,DIRECT
+DOMAIN,gsa.apple.com,DIRECT
 
-# 🔵 Apple Push
-DOMAIN,push.apple.com
-DOMAIN-KEYWORD,push.apple.com
+# 🔵 Apple Push（直连）
+DOMAIN,push.apple.com,DIRECT
+DOMAIN-KEYWORD,push.apple.com,DIRECT
 
-# 🔵 Find My / Location
-DOMAIN-KEYWORD,findmy
-DOMAIN-SUFFIX,fmfmobile.apple.com
-DOMAIN-SUFFIX,fmipmobile.apple.com
+# 🔵 Find My（直连）
+DOMAIN-KEYWORD,findmy,DIRECT
+DOMAIN-SUFFIX,fmfmobile.apple.com,DIRECT
+DOMAIN-SUFFIX,fmipmobile.apple.com,DIRECT
 
-# 🔵 Apple Music / Apple TV+（MY 全部直连）
-DOMAIN-SUFFIX,music.apple.com
-DOMAIN-SUFFIX,tv.apple.com
-DOMAIN-SUFFIX,applemusic.com
-DOMAIN-SUFFIX,media.apple.com
-DOMAIN-SUFFIX,itunes.apple.com
-DOMAIN-SUFFIX,audio-akamai.apple.com
+# 🔵 Apple Music / TV+（MY 直连）
+DOMAIN-SUFFIX,music.apple.com,DIRECT
+DOMAIN-SUFFIX,tv.apple.com,DIRECT
+DOMAIN-SUFFIX,applemusic.com,DIRECT
+DOMAIN-SUFFIX,media.apple.com,DIRECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,audio-akamai.apple.com,DIRECT
 
 # 🔵 Siri / Dictation（直连）
-DOMAIN-SUFFIX,siri.apple.com
-DOMAIN-SUFFIX,dictation.apple.com
+DOMAIN-SUFFIX,siri.apple.com,DIRECT
+DOMAIN-SUFFIX,dictation.apple.com,DIRECT
 
-# 🔵 App Store（部分直连）
-DOMAIN-SUFFIX,apps.apple.com
-DOMAIN-SUFFIX,itunes.apple.com
-DOMAIN-SUFFIX,appsto.re
+# 🔵 App Store（直连）
+DOMAIN-SUFFIX,apps.apple.com,DIRECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,appsto.re,DIRECT
 
-# 🔵 App Store 更新 / CDN（直连更快）
-DOMAIN,iosapps.itunes.apple.com
-DOMAIN,osxapps.itunes.apple.com
-DOMAIN-SUFFIX,blobstore.apple.com
-DOMAIN-SUFFIX,cdn-apple.com
+# 🔵 App Store CDN（直连）
+DOMAIN,iosapps.itunes.apple.com,DIRECT
+DOMAIN,osxapps.itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,blobstore.apple.com,DIRECT
+DOMAIN-SUFFIX,cdn-apple.com,DIRECT
 
-# 🔵 Apple Weather（直连）
-DOMAIN-SUFFIX,weather-data.apple.com
-DOMAIN-SUFFIX,weather-map.apple.com
-DOMAIN-SUFFIX,weather-analytics-events.apple.com
+# 🔵 Weather（直连）
+DOMAIN-SUFFIX,weather-data.apple.com,DIRECT
+DOMAIN-SUFFIX,weather-map.apple.com,DIRECT
+DOMAIN-SUFFIX,weather-analytics-events.apple.com,DIRECT
 
-# 🔵 Apple Maps（直连）
-DOMAIN-SUFFIX,apple-mapkit.com
-DOMAIN-SUFFIX,ls.apple.com
+# 🔵 Maps（直连）
+DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+DOMAIN-SUFFIX,ls.apple.com,DIRECT
 
 # 🔵 Apple Pay（直连）
-DOMAIN-SUFFIX,apple-pay-gateway.apple.com
-DOMAIN-SUFFIX,apple-pay-gateway.cn
+DOMAIN-SUFFIX,apple-pay-gateway.apple.com,DIRECT
+DOMAIN-SUFFIX,apple-pay-gateway.cn,DIRECT
 
-# 🟡 TestFlight（需要代理解锁某些区域）
-DOMAIN-SUFFIX,testflight.apple.com
+# 🟡 TestFlight（代理解锁）
+DOMAIN-SUFFIX,testflight.apple.com,Proxy
+DOMAIN-SUFFIX,appstoreconnect.apple.com,Proxy
+DOMAIN-SUFFIX,appstore-review.apple.com,Proxy
 
-# 🟡 App Store 地区限制资源（可选代理）
-DOMAIN-SUFFIX,appstoreconnect.apple.com
-DOMAIN-SUFFIX,appstore-review.apple.com
+# 🔵 Security（直连）
+DOMAIN-KEYWORD,o.lencr.org,DIRECT
+DOMAIN-SUFFIX,ocsp.apple.com,DIRECT
 
-# 🔵 Security / OCSP（直连）
-DOMAIN-KEYWORD,o.lencr.org
-DOMAIN-SUFFIX,ocsp.apple.com
+# 🔵 Device Management（直连）
+DOMAIN-SUFFIX,activation.apple.com,DIRECT
+DOMAIN-SUFFIX,smp-device-content.apple.com,DIRECT
 
-# 🔵 Apple Device Management /各种激活（必须直连）
-DOMAIN-SUFFIX,activation.apple.com
-DOMAIN-SUFFIX,smp-device-content.apple.com
+# 🔵 CDN（直连）
+DOMAIN-SUFFIX,akadns.net,DIRECT
+DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+DOMAIN-SUFFIX,apple-dns.net,DIRECT
 
-# 🔵 CDN
-DOMAIN-SUFFIX,akadns.net
-DOMAIN-SUFFIX,akamaiedge.net
-DOMAIN-SUFFIX,apple-dns.net
+# 🟣 兜底 TestFlight
+DOMAIN-KEYWORD,testflight,Proxy
 
-# 🟣 兜底（只代理 TestFlight 和区域锁）
-DOMAIN-KEYWORD,testflight
+# END
