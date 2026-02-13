@@ -1,127 +1,103 @@
-# NAME: Proxy (Malaysia Optimized)
+# NAME: Proxy (Malaysia Optimized) - proxy.txt
 # REGION: MY
-# DESCRIPTION: Proxy rules for Facebook, Instagram, X, TikTok, AI services, GEO locked platforms
-# UPDATED: 2026
+# DESCRIPTION: Proxy rules for Facebook, Instagram, X, TikTok, AI, Streaming, China sites
 # ---------------------------------------------
 
-# 社交媒体 Proxy（在马来西亚常被限速或不稳定）
+# Facebook/社交（即使本地 CDN 也走 Proxy）
+IP-CIDR,157.240.236.0/24,Proxy,no-resolve
+IP-CIDR,163.70.137.0/24,Proxy,no-resolve
+IP-CIDR,157.240.211.0/24,Proxy,no-resolve
+IP-CIDR,157.240.245.0/24,Proxy,no-resolve
+IP-CIDR6,2a03:2880::/32,Proxy,no-resolve
 
-# 社交媒体马来西亚直连（精简版）
-IP-CIDR,157.240.236.0/24
-IP-CIDR,163.70.137.0/24
-IP-CIDR,157.240.211.0/24
-IP-CIDR,157.240.245.0/24
-IP-CIDR6,2a03:2880::/32
+DOMAIN-SUFFIX,facebook.com,Proxy
+DOMAIN-SUFFIX,m.facebook.com,Proxy
+DOMAIN-SUFFIX,fb.com,Proxy
+DOMAIN-SUFFIX,fbcdn.net,Proxy,no-resolve
+DOMAIN-SUFFIX,fbaddins.com,Proxy
+DOMAIN-SUFFIX,fbsbx.com,Proxy
+DOMAIN-SUFFIX,instagram.com,Proxy
+DOMAIN-SUFFIX,cdninstagram.com,Proxy,no-resolve
+DOMAIN-SUFFIX,whatsapp.com,Proxy
+DOMAIN-SUFFIX,whatsapp.net,Proxy
+DOMAIN-SUFFIX,x.com,Proxy
+DOMAIN-SUFFIX,twitter.com,Proxy
+DOMAIN-SUFFIX,twimg.com,Proxy
+DOMAIN-SUFFIX,snapchat.com,Proxy
 
-# 域名规则（兜底所有 CDN）
-DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,m.facebook.com
-DOMAIN-SUFFIX,fb.com
-DOMAIN-SUFFIX,fbcdn.net,no-resolve
-DOMAIN-SUFFIX,fbaddins.com
-DOMAIN-SUFFIX,fbsbx.com
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,cdninstagram.com,no-resolve
-DOMAIN-SUFFIX,whatsapp.com
-DOMAIN-SUFFIX,whatsapp.net
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,twimg.com
-DOMAIN-SUFFIX,snapchat.com
+# TikTok 海外
+DOMAIN-SUFFIX,tiktok.com,Proxy
+DOMAIN-SUFFIX,byteoversea.com,Proxy
+DOMAIN-KEYWORD,tiktokcdn,Proxy
 
-# TikTok（MY 无需代理，但很多人需要美区/无水印解析）
-DOMAIN-SUFFIX,tiktok.com
-DOMAIN-SUFFIX,byteoversea.com
-DOMAIN-KEYWORD,tiktokcdn
+# 流媒体
+DOMAIN-SUFFIX,netflix.com,Proxy
+DOMAIN-SUFFIX,netflix.net,Proxy
+DOMAIN-SUFFIX,netflixdnstest0.com,Proxy
+DOMAIN-SUFFIX,disneyplus.com,Proxy
+DOMAIN-SUFFIX,hulu.com,Proxy
+DOMAIN-SUFFIX,primevideo.com,Proxy
+DOMAIN-SUFFIX,hbonow.com,Proxy
+DOMAIN-SUFFIX,hbomax.com,Proxy
+DOMAIN-SUFFIX,spotify.com,Proxy
 
-# 流媒体国际版（按需解锁）
-DOMAIN-SUFFIX,netflix.com
-DOMAIN-SUFFIX,netflix.net
-DOMAIN-SUFFIX,netflixdnstest0.com
-DOMAIN-SUFFIX,disneyplus.com
-DOMAIN-SUFFIX,hulu.com
-DOMAIN-SUFFIX,primevideo.com
-DOMAIN-SUFFIX,hbonow.com
-DOMAIN-SUFFIX,hbomax.com
-DOMAIN-SUFFIX,spotify.com
+# AI 全家桶
+DOMAIN-SUFFIX,openai.com,Proxy
+DOMAIN-SUFFIX,chatgpt.com,Proxy
+DOMAIN-SUFFIX,anthropic.com,Proxy
+DOMAIN-SUFFIX,claude.ai,Proxy
+DOMAIN-SUFFIX,poe.com,Proxy
+DOMAIN-SUFFIX,perplexity.ai,Proxy
+DOMAIN-SUFFIX,gemini.google.com,Proxy
+DOMAIN-SUFFIX,notion.com,Proxy
+DOMAIN-KEYWORD,openai,Proxy
+DOMAIN-KEYWORD,anthropic,Proxy
+DOMAIN-KEYWORD,perplexity,Proxy
+DOMAIN-KEYWORD,ollama,Proxy
 
-# AI 服务（ChatGPT / Claude / Bard / Gemini）
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,poe.com
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,notion.com
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,perplexity
-DOMAIN-KEYWORD,ollama
+# 开发者 + 中国网站
+DOMAIN-SUFFIX,github.com,Proxy
+DOMAIN-SUFFIX,githubusercontent.com,Proxy
+DOMAIN-SUFFIX,gitlab.com,Proxy
+DOMAIN-SUFFIX,bilibili.com,Proxy
+DOMAIN-SUFFIX,bilivideo.com,Proxy
+DOMAIN-SUFFIX,zhihu.com,Proxy
+DOMAIN-SUFFIX,v2ex.com,Proxy
+DOMAIN-SUFFIX,sspai.com,Proxy
+DOMAIN-SUFFIX,acfun.cn,Proxy
+DOMAIN-SUFFIX,weibo.com,Proxy
 
-# 开发者平台 Proxy（GitHub / GitLab）
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,gitlab.com
-DOMAIN-KEYWORD,github
+# 游戏/Google/Apple/港台日/Telegram
+DOMAIN-SUFFIX,googlesource.com,Proxy
+DOMAIN-SUFFIX,gstatic.com,Proxy
+DOMAIN-SUFFIX,googleapis.cn,Proxy
+DOMAIN-SUFFIX,appsto.re,Proxy
+DOMAIN-KEYWORD,testflight,Proxy
+DOMAIN-SUFFIX,epicgames.com,Proxy
+DOMAIN-SUFFIX,steampowered.com,Proxy
+DOMAIN-SUFFIX,ea.com,Proxy
+DOMAIN-SUFFIX,playstation.com,Proxy
+DOMAIN-SUFFIX,xboxlive.com,Proxy
+DOMAIN-SUFFIX,battle.net,Proxy
+DOMAIN-SUFFIX,blizzard.com,Proxy
+DOMAIN-SUFFIX,rockstargames.com,Proxy
+DOMAIN-SUFFIX,telegram.org,Proxy
+DOMAIN-SUFFIX,t.me,Proxy
+DOMAIN-SUFFIX,ptt.cc,Proxy
+DOMAIN-SUFFIX,lihkg.com,Proxy
+DOMAIN-SUFFIX,niconico.jp,Proxy
+DOMAIN-SUFFIX,pixiv.net,Proxy
+DOMAIN-SUFFIX,line.me,Proxy
+DOMAIN-SUFFIX,line-apps.com,Proxy
 
-# 中国需要代理访问的服务
-DOMAIN-SUFFIX,bilibili.com
-DOMAIN-SUFFIX,bilivideo.com
-DOMAIN-SUFFIX,zhihu.com
-DOMAIN-SUFFIX,v2ex.com
-DOMAIN-SUFFIX,sspai.com
-DOMAIN-SUFFIX,acfun.cn
-DOMAIN-SUFFIX,weibo.com
+# ASN + IP（Telegram）
+IP-ASN,44907,Proxy
+IP-ASN,62014,Proxy
+IP-ASN,59930,Proxy
+IP-ASN,62041,Proxy
+IP-ASN,211157,Proxy
+IP-CIDR,5.28.192.0/18,Proxy
+IP-CIDR,109.239.140.0/24,Proxy
 
-# Google Blocked Features（Only部分功能需要代理）
-DOMAIN-SUFFIX,googlesource.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-KEYWORD,googleapis.cn
-
-# Apple 服务（仅中国区需要代理，不影响 Global）
-DOMAIN-SUFFIX,appsto.re
-DOMAIN-KEYWORD,testflight
-
-# Gaming（避免地区限制）
-DOMAIN-SUFFIX,epicgames.com
-DOMAIN-SUFFIX,steampowered.com
-DOMAIN-SUFFIX,steamcommunity.com
-DOMAIN-SUFFIX,ea.com
-DOMAIN-SUFFIX,playstation.com
-DOMAIN-SUFFIX,xboxlive.com
-DOMAIN-SUFFIX,battle.net
-DOMAIN-SUFFIX,blizzard.com
-DOMAIN-SUFFIX,rockstargames.com
-
-# Telegram（在 MY 有时被限速）
-DOMAIN-SUFFIX,telegram.org
-DOMAIN-SUFFIX,t.me
-# swiftgram
-
-IP-ASN,44907
-IP-ASN,62014
-IP-ASN,59930
-IP-ASN,62041
-IP-ASN,211157
-IP-CIDR,5.28.192.0/18
-IP-CIDR,109.239.140.0/24
-DOMAIN-KEYWORD,swiftgram
-DOMAIN-SUFFIX,swiftgram.net
-DOMAIN,api.swiftgram.app
-
-# 香港/台湾/日本区域内容（按需求走 Proxy）
-DOMAIN-SUFFIX,ptt.cc
-DOMAIN-SUFFIX,lihkg.com
-DOMAIN-SUFFIX,niconico.jp
-DOMAIN-SUFFIX,pixiv.net
-DOMAIN-SUFFIX,line.me
-DOMAIN-SUFFIX,line-apps.com
-
-# 防火墙检测（中国ICP备案域名 → 可能被墙）
-DOMAIN-SUFFIX,cloudfront.cn
-DOMAIN-SUFFIX,cloudflare.cn
-
-# Proxy 兜底
-DOMAIN-KEYWORD,proxy
-DOMAIN-KEYWORD,geoblock
+DOMAIN-KEYWORD,proxy,Proxy
+DOMAIN-KEYWORD,geoblock,Proxy
