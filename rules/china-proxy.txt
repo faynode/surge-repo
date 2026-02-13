@@ -1,6 +1,20 @@
 # china douyin
 
-DOMAIN-KEYWORD,amemv
-DOMAIN-KEYWORD,snssdk
+# china-proxy.txt (domain name set format, China TikTok complete domain name set)
 
-DOMAIN-SUFFIX,zjcdn.com
+# One domain name per line, to. Match all subdomains at the beginning
+
+# Used for: DOMAIN-SET,china-proxy.txt,China-Proxy
+
+.amemv.com      # The main domain name of China TikTok (frontier100-aweme.amemv.com 等)
+.snssdk.com     # Byte SDK (ib.snssdk.com 等)
+.zjcdn.com      # Tik Tok CDN (v5-hl-mly-ov.zjcdn.com)
+.douyin.com     # Tik TokOfficial website
+.douyinpic.com  #Pictures on TikTok CDN
+.ttlivecdn.com  # TikTok live broadcast CDN
+
+# Additional TikTok commonly used domain names (optional, add as needed)
+.byteimg.com    # Byte picture CDN
+.douyincdn.com  # TikTok backupCDN
+.aweme.snssdk.com # TikTok short video core
+
