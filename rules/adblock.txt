@@ -3,7 +3,7 @@
 # --------------------------------------------------------
 
 # 1. Douyin Safe Ads Block
-DOMAIN-SUFFIX,ad.zijieapi.com,REJECT
+DOMAIN-SUFFIX,zijieapi.com,REJECT
 DOMAIN-SUFFIX,ad.bytedance.com,REJECT
 DOMAIN-SUFFIX,ad-static.bytedance.com,REJECT
 DOMAIN-SUFFIX,ad-bci.byteimg.com,REJECT
