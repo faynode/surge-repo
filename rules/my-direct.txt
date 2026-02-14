@@ -1,0 +1,133 @@
+# NAME: Direct (Malaysia Optimized)
+# REGION: MY
+# DESCRIPTION: Direct access for Malaysia ISPs (Maxis/Digi/Celcom/U Mobile/Unifi/etc.)
+# ---------------------------------------------
+
+# Apple Services
+DOMAIN,init.ess.apple.com,DIRECT
+DOMAIN,itunes.apple.com,DIRECT
+DOMAIN,time.apple.com,DIRECT
+DOMAIN,smp-device-content.apple.com,DIRECT
+DOMAIN-KEYWORD,icloud.com,DIRECT
+DOMAIN-KEYWORD,api.smoot.apple.com,DIRECT
+DOMAIN-KEYWORD,api.smoot.apple.cn,DIRECT
+DOMAIN-KEYWORD,ess.apple.com,DIRECT
+DOMAIN-KEYWORD,ls.apple.com,DIRECT
+DOMAIN-KEYWORD,push.apple.com,DIRECT
+DOMAIN-KEYWORD,weather-edge.apple.com,DIRECT
+DOMAIN-KEYWORD,weather-adge.apple.com,DIRECT
+DOMAIN-KEYWORD,ssl.apple.com,DIRECT
+
+# Google
+DOMAIN,alt1-mtalk.google.com,DIRECT
+DOMAIN,alt2-mtalk.google.com,DIRECT
+DOMAIN,alt3-mtalk.google.com,DIRECT
+DOMAIN,alt4-mtalk.google.com,DIRECT
+DOMAIN,alt5-mtalk.google.com,DIRECT
+DOMAIN,alt6-mtalk.google.com,DIRECT
+DOMAIN,alt7-mtalk.google.com,DIRECT
+DOMAIN,alt8-mtalk.google.com,DIRECT
+DOMAIN,mtalk.google.com,DIRECT
+DOMAIN,clientservices.googleapis.com,DIRECT
+DOMAIN,dl.google.com,DIRECT
+DOMAIN,dl.l.google.com,DIRECT
+DOMAIN,update.googleapis.com,DIRECT
+
+# Shopee / Lazada / Grab (Malaysia)
+DOMAIN-SUFFIX,shopee.com.my,DIRECT
+DOMAIN-SUFFIX,shopeemobile.com,DIRECT
+DOMAIN-SUFFIX,lazada.com.my,DIRECT
+DOMAIN-SUFFIX,grab.com,DIRECT
+
+# Malaysian banking
+DOMAIN-SUFFIX,maybank2u.com.my,DIRECT
+DOMAIN-SUFFIX,cimbclicks.com.my,DIRECT
+DOMAIN-SUFFIX,ambankgroup.com,DIRECT
+DOMAIN-SUFFIX,publicbank.com.my,DIRECT
+DOMAIN-SUFFIX,rhbgroup.com,DIRECT
+DOMAIN-SUFFIX,cimbocto.com.my,DIRECT
+
+# Malaysia Telcos
+DOMAIN-SUFFIX,maxis.com.my,DIRECT
+DOMAIN-SUFFIX,digi.com.my,DIRECT
+DOMAIN-SUFFIX,celcom.com.my,DIRECT
+DOMAIN-SUFFIX,umobile.com.my,DIRECT
+DOMAIN-SUFFIX,unifi.com.my,DIRECT
+
+# Malaysia Gov / Edu
+DOMAIN-SUFFIX,gov.my,DIRECT
+DOMAIN-SUFFIX,edu.my,DIRECT
+
+# Malaysia OTT / Media
+DOMAIN-SUFFIX,astro.com.my,DIRECT
+DOMAIN-SUFFIX,tonton.com.my,DIRECT
+
+# CDN (SEA)
+DOMAIN-SUFFIX,cdn77.org,DIRECT
+DOMAIN-SUFFIX,cachefly.net,DIRECT
+DOMAIN-SUFFIX,jsdelivr.net,DIRECT
+DOMAIN,cdn.jsdelivr.net,DIRECT
+
+# BT / PT 直连
+DOMAIN-SUFFIX,alpharatio.cc,DIRECT
+DOMAIN-SUFFIX,awesome-hd.me,DIRECT
+DOMAIN-SUFFIX,beyond-hd.me,DIRECT
+DOMAIN-SUFFIX,blutopia.xyz,DIRECT
+DOMAIN-SUFFIX,filelist.io,DIRECT
+DOMAIN-SUFFIX,hdbits.org,DIRECT
+DOMAIN-SUFFIX,hdchina.org,DIRECT
+DOMAIN-SUFFIX,ourbits.club,DIRECT
+DOMAIN-SUFFIX,pterclub.com,DIRECT
+DOMAIN-SUFFIX,totheglory.im,DIRECT
+DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
+DOMAIN-SUFFIX,leaguehd.com,DIRECT
+DOMAIN-SUFFIX,m-team.cc,DIRECT
+DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
+DOMAIN-SUFFIX,redacted.ch,DIRECT
+DOMAIN-SUFFIX,hudbt.hust.edu.cn,DIRECT
+DOMAIN-SUFFIX,ncore.cc,DIRECT
+
+# Academic Direct
+DOMAIN-SUFFIX,ieee.org,DIRECT
+DOMAIN-SUFFIX,jstor.org,DIRECT
+DOMAIN-SUFFIX,nature.com,DIRECT
+DOMAIN-SUFFIX,oup.com,DIRECT
+DOMAIN-SUFFIX,wiley.com,DIRECT
+DOMAIN-SUFFIX,sciencemag.org,DIRECT
+DOMAIN-SUFFIX,scopus.com,DIRECT
+DOMAIN-SUFFIX,springer.com,DIRECT
+
+# Common services
+DOMAIN-SUFFIX,bootcss.com,DIRECT
+DOMAIN-SUFFIX,baomitu.com,DIRECT
+DOMAIN-SUFFIX,staticfile.org,DIRECT
+DOMAIN-SUFFIX,weather-data.apple.com,DIRECT
+DOMAIN-SUFFIX,weather-map.apple.com,DIRECT
+
+# Misc
+DOMAIN,analytics.strava.com,DIRECT
+DOMAIN,analytics.95516.com,DIRECT
+DOMAIN,new-api.meiqia.com,DIRECT
+DOMAIN,eco-push-api-client.meiqia.com,DIRECT
+DOMAIN,img.kuaikanzy.net,DIRECT
+DOMAIN,img.bfzypic.com,DIRECT
+DOMAIN,img.liangzipic.com,DIRECT
+DOMAIN,img.ffzypic.com,DIRECT
+DOMAIN,vip.imgffzy.com,DIRECT
+DOMAIN-KEYWORD,anti-ad.net,DIRECT
+DOMAIN-KEYWORD,sciencedirect,DIRECT
+DOMAIN-KEYWORD,readcube,DIRECT
+DOMAIN-KEYWORD,deepdyve,DIRECT
+DOMAIN-KEYWORD,elsevier,DIRECT
+DOMAIN-SUFFIX,xunlei.com,DIRECT
+DOMAIN-KEYWORD,ax1x.com,DIRECT
+DOMAIN-KEYWORD,wishct,DIRECT
+# USER-AGENT
+USER-AGENT,Thunder*,DIRECT
+USER-AGENT,XLNetAccelerator*,DIRECT
+
+# School
+DOMAIN-SUFFIX,stu.jjc.edu,DIRECT
+DOMAIN-SUFFIX,jjc.edu,DIRECT
+
+# END
