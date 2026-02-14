@@ -21,8 +21,8 @@ DOMAIN-SUFFIX,fbaddins.com,Proxy
 DOMAIN-SUFFIX,fbsbx.com,Proxy
 DOMAIN-SUFFIX,instagram.com,Proxy
 DOMAIN-SUFFIX,cdninstagram.com,Proxy,no-resolve
-DOMAIN-SUFFIX,whatsapp.com,Proxy
-DOMAIN-SUFFIX,whatsapp.net,Proxy
+DOMAIN-SUFFIX,whatsapp.com,DIRECT
+DOMAIN-SUFFIX,whatsapp.net,DIRECT
 DOMAIN-SUFFIX,meta.com,Proxy
 DOMAIN-SUFFIX,oculus.com,Proxy
 
