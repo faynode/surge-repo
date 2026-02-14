@@ -7,6 +7,6 @@ DOMAIN-SUFFIX,avmiss10.life
 DOMAIN-SUFFIX,520cc.cc
 DOMAIN-SUFFIX,jav777.xyz
 DOMAIN-SUFFIX,noodlemagazine.com
-
+DOMAIN-SUFFIX,rou.video
 
 DOMAIN-KEYWORD,7tv044
