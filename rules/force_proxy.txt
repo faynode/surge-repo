@@ -1,0 +1,14 @@
+# AI
+.openai.com
+.chatgpt.com
+.oaistatic.com
+.oaiusercontent.com
+.anthropic.com
+.claude.ai
+gemini.google.com
+
+# Social
+.telegram.org
+.t.me
+.x.com
+.twitter.com
