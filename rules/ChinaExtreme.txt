@@ -1,0 +1,64 @@
+📄 ChinaExtreme.ruleset
+# ===== China Mainland Extreme (Domain) =====
+
+# BAT / TMD
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,bdstatic.com
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,1688.com
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,toutiao.com
+
+# E-commerce / Local life
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,yangkeduo.com
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,dianping.com
+
+# Video
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,mgtv.com
+
+# Music
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,music.126.net
+DOMAIN-SUFFIX,qqmusic.qq.com
+DOMAIN-SUFFIX,kugou.com
+DOMAIN-SUFFIX,kuwo.cn
+
+# Community / Content
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,sina.com.cn
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,zhimg.com
+DOMAIN-SUFFIX,douban.com
+
+# Cloud / CDN (Domestic)
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,aliyuncs.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,tencentyun.com
+DOMAIN-SUFFIX,ksyun.com
+
+# Government / Education
+DOMAIN-SUFFIX,gov.cn
+DOMAIN-SUFFIX,edu.cn
+
+# END
