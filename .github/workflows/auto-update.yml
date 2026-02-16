@@ -1,0 +1,40 @@
+name: Update Malaysia Direct Rules
+on:
+  schedule:
+    - cron: '0 20 * * *' # 每天凌晨 4 点（马来西亚时间）运行
+  workflow_dispatch: # 支持手动点击运行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Fetch and Merge Rules
+        run: |
+          # 1. 下载全球顶级规则库 (BlackMatrix7 等)
+          curl -sSL https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Direct/Direct.list > global_direct.tmp
+          curl -sSL https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list > apple.tmp
+          
+          # 2. 提取所有包含 .my, .com.my, .edu.my 以及马国关键字的规则
+          grep -iE "\.my|\.com\.my|\.gov\.my|maybank|cimb|grab|shopee|lazada" global_direct.tmp > my_extracted.tmp
+          
+          # 3. 合并你原本的直连列表 (假设你有个私人备份叫 private_direct.txt)
+          # 或者直接处理你现有的 direct.txt
+          cat rules/direct.txt my_extracted.tmp > merged.tmp
+          
+          # 4. 极致优化：去重、排序、清理非域名行
+          # 只保留 DOMAIN-SUFFIX 或 DOMAIN 格式的内容，并转为纯域名格式以适配 DOMAIN-SET
+          grep -vE '^#|^//|^\s*$' merged.tmp | sed 's/DOMAIN-SUFFIX,//g' | sed 's/DOMAIN,//g' | sed 's/DOMAIN-KEYWORD,//g' | awk -F, '{print $1}' | sort -u > rules/direct.txt
+          
+          # 清理临时文件
+          rm *.tmp
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add rules/direct.txt
+          git commit -m "Auto Update Malaysia Direct Rules $(date +'%Y-%m-%d')" || exit 0
+          git push
