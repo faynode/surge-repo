@@ -8,15 +8,6 @@
 
 .amemv.com
 .snssdk.con
-.zjcdn.com
-.douyin.com
-.douyinpic.com
-.ttlivecdn.com
-.douyinvod.com
-.toutiaoapi.com
+.ixigua.com
 # Additional TikTok commonly used domain names (optional, add as needed)
-.byteimg.com
-.douyincdn.com
-.aweme.snssdk.com
-
 # END
