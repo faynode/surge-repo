@@ -1,0 +1,108 @@
+# NAME: China Domains Rule-set
+# AUTHOR: faynode
+# REPO: https://github.com/faynode/surge-repo
+# DESCRIPTION: Comprehensive list of mainland China domains
+# ----------------------------------------------------
+
+# --- Top Level Domains ---
+DOMAIN-SUFFIX,cn
+DOMAIN-SUFFIX,xn--fiqs8s
+DOMAIN-SUFFIX,xn--fiqz9s
+
+# --- Tencent (QQ/WeChat) ---
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,idqqimg.com
+DOMAIN-SUFFIX,myqcloud.com
+
+# --- Alibaba (Alipay/Taobao/Tmall) ---
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,mmstat.com
+DOMAIN-SUFFIX,tbcache.com
+
+# --- Baidu ---
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,bdstatic.com
+DOMAIN-SUFFIX,baidupcs.com
+DOMAIN-SUFFIX,bdimg.com
+
+# --- ByteDance (Douyin/Toutiao) ---
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,volccdn.com
+
+# --- E-Commerce & Services ---
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,yangkeduo.com
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,dianping.com
+DOMAIN-SUFFIX,ele.me
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,autonavi.com
+
+# --- Media & Streaming ---
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,qy.net
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,xiami.net
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,126.net
+
+# --- Smart Home & Hardware ---
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,mi-img.com
+DOMAIN-SUFFIX,huawei.com
+DOMAIN-SUFFIX,dbankcdn.com
+DOMAIN-SUFFIX,oppo.com
+DOMAIN-SUFFIX,vivo.com
+
+# --- Banking & Finance ---
+DOMAIN-SUFFIX,unionpay.com
+DOMAIN-SUFFIX,95516.com
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,ccb.com
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,cmbchina.com
+
+# --- Apple in China ---
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,mzstatic.com
+
+# --- Others ---
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,126.com
+DOMAIN-SUFFIX,sina.com.cn
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibocdn.com
+DOMAIN-SUFFIX,sohu.com
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,zhimg.com
+DOMAIN-SUFFIX,douban.com
+DOMAIN-SUFFIX,xunlei.com
+DOMAIN-SUFFIX,360.cn
+DOMAIN-SUFFIX,qhres.com
+
+# END
