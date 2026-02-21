@@ -1,0 +1,14 @@
+# > California State University, Northridge (CSUN)
+DOMAIN-SUFFIX,csun.edu
+DOMAIN-KEYWORD,csun
+
+# > Joliet Junior College (JJC) - Student Portal
+DOMAIN-SUFFIX,stu.jjc.edu
+# (可选) 如果登录时涉及到主域名跳转，可以取消下面这行的注释
+# DOMAIN-SUFFIX,jjc.edu
+
+# > 常见的教育网通用 SSO/系统关联域名 (按需保留)
+# 如果这两个学校使用 Canvas 或 Blackboard 平台，建议加上以下后缀以防加载缓慢
+# DOMAIN-SUFFIX,instructure.com
+# DOMAIN-SUFFIX,blackboard.com
+
