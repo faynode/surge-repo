@@ -130,4 +130,34 @@ USER-AGENT,XLNetAccelerator*,DIRECT
 DOMAIN-SUFFIX,stu.jjc.edu,DIRECT
 DOMAIN-SUFFIX,jjc.edu,DIRECT
 
+# Meta (Facebook / WhatsApp / Instagram)
+DOMAIN-SUFFIX,facebook.co,DIRECTm
+DOMAIN-SUFFIX,facebook.net,DIRECT
+DOMAIN-SUFFIX,fb.com,DIRECT
+DOMAIN-SUFFIX,fb.me,DIRECT
+DOMAIN-SUFFIX,fbcdn.net,DIRECT
+
+DOMAIN-SUFFIX,whatsapp.com,DIRECT
+DOMAIN-SUFFIX,whatsapp.net,DIRECT
+
+DOMAIN-SUFFIX,instagram.com,DIRECT
+DOMAIN-SUFFIX,cdninstagram.com,DIRECT
+
+# GitHub
+DOMAIN-SUFFIX,github.com,DIRECT
+DOMAIN-SUFFIX,github.io,DIRECT
+DOMAIN-SUFFIX,githubuserconten,DIRECTt.com
+DOMAIN-SUFFIX,raw.githubusercontent.com,DIRECT
+DOMAIN-SUFFIX,objects.githubusercontent.com,DIRECT
+
+# Telegram
+
+IP-CIDR,130.49.152.38/32,DIRECT,no-resolve
+IP-CIDR,130.49.152.36/32,DIRECT,no-resolve
+IP-CIDR,130.49.152.34/32,DIRECT,no-resolve
+IP-CIDR,130.49.152.32/32,DIRECT,no-resolve
+IP-CIDR,130.49.152.30/32,DIRECT,no-resolve
+DOMAIN-SUFFIX,telega.info,DIRECT
+
+
 # END
