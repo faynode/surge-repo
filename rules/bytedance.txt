@@ -1,0 +1,38 @@
+# ==========================================
+# 策略：中国大陆抖音 (Douyin) -> 强制节点
+# 目的：伪装 IP 属地，让直播间、主页、评论区显示为“美国”
+# ==========================================
+
+# 1. 抖音核心域名及直播流
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,idouyincdn.com
+
+# 2. 字节跳动核心 API 与短视频请求（决定IP属地的关键）
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,iesdouyin.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,aweme.snssdk.com
+
+# 3. 头条系共用组件、图片、视频 CDN 加载
+# (⚠️必须全部走美国，否则如果图片走直连，可能会暴露你的马来西亚真实IP)
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,toutiaoimg.com
+DOMAIN-SUFFIX,toutiaoimg.cn
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,bytegoofy.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,bytedance.net
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,toutiao.com
+
+# 4. 关键字暴力兜底 (只要链接里带有这些词，全部发往美国)
+DOMAIN-KEYWORD,douyin
+DOMAIN-KEYWORD,snssdk
+DOMAIN-KEYWORD,bytedance
+DOMAIN-KEYWORD,amemv
+DOMAIN-KEYWORD,pstatp
+
+# END
