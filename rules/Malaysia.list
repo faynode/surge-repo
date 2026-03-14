@@ -1,0 +1,339 @@
+# ======================================
+# Malaysia Direct Rules
+# 适用: Surge / Clash / 兼容格式
+# 更新日期: 2026-03-15
+# 说明: 马来西亚本地服务、ISP、银行、政府、
+#        媒体、电商等，均走直连
+# ======================================
+
+# ======================================
+# 📡 ISP / 电信运营商
+# ======================================
+DOMAIN-SUFFIX,unifi.com.my
+DOMAIN-SUFFIX,tm.com.my
+DOMAIN-SUFFIX,telekom.com.my
+DOMAIN-SUFFIX,maxis.com.my
+DOMAIN-SUFFIX,hotlink.com.my
+DOMAIN-SUFFIX,digi.com.my
+DOMAIN-SUFFIX,yes.my
+DOMAIN-SUFFIX,yoodo.com.my
+DOMAIN-SUFFIX,celcom.com.my
+DOMAIN-SUFFIX,axiata.com
+DOMAIN-SUFFIX,u-mobile.com.my
+DOMAIN-SUFFIX,tune-talk.com
+DOMAIN-SUFFIX,altel.com.my
+DOMAIN-SUFFIX,redone.com.my
+DOMAIN-SUFFIX,merchanttrade.com
+
+# ======================================
+# 🏦 银行 / 金融
+# ======================================
+DOMAIN-SUFFIX,maybank.com
+DOMAIN-SUFFIX,maybank2u.com.my
+DOMAIN-SUFFIX,maybank2e.com
+DOMAIN-SUFFIX,cimb.com
+DOMAIN-SUFFIX,cimbclicks.com.my
+DOMAIN-SUFFIX,pbebank.com
+DOMAIN-SUFFIX,publicbank.com.my
+DOMAIN-SUFFIX,hlb.com.my
+DOMAIN-SUFFIX,hongleongbank.com
+DOMAIN-SUFFIX,rhbbank.com.my
+DOMAIN-SUFFIX,rhbgroup.com
+DOMAIN-SUFFIX,affinbank.com.my
+DOMAIN-SUFFIX,affinislamic.com.my
+DOMAIN-SUFFIX,ambbank.com.my
+DOMAIN-SUFFIX,ambank.com.my
+DOMAIN-SUFFIX,bankislam.com.my
+DOMAIN-SUFFIX,bankrakyat.com.my
+DOMAIN-SUFFIX,bsn.com.my
+DOMAIN-SUFFIX,muamalat.com.my
+DOMAIN-SUFFIX,bankmuamalat.com.my
+DOMAIN-SUFFIX,alrajhibank.com.my
+DOMAIN-SUFFIX,standardchartered.com.my
+DOMAIN-SUFFIX,hsbc.com.my
+DOMAIN-SUFFIX,ocbc.com.my
+DOMAIN-SUFFIX,uob.com.my
+DOMAIN-SUFFIX,citibank.com.my
+DOMAIN-SUFFIX,mbsb.com.my
+DOMAIN-SUFFIX,kfhmalaysia.com
+DOMAIN-SUFFIX,agrobank.com.my
+
+# 电子钱包 / 支付
+DOMAIN-SUFFIX,touchngo.com.my
+DOMAIN-SUFFIX,tngdigital.com.my
+DOMAIN-SUFFIX,tng-ewallet.com
+DOMAIN-SUFFIX,boost.com.my
+DOMAIN-SUFFIX,grabpay.com
+DOMAIN-SUFFIX,bigpay.com
+DOMAIN-SUFFIX,fave.com
+DOMAIN-SUFFIX,senangpay.my
+DOMAIN-SUFFIX,ipay88.com.my
+DOMAIN-SUFFIX,molpay.com
+DOMAIN-SUFFIX,razer.com
+DOMAIN-SUFFIX,merchantrade.com
+DOMAIN-SUFFIX,mcash.com.my
+DOMAIN-SUFFIX,myeg.com.my
+
+# ======================================
+# 🏛️ 政府 / 公共服务
+# ======================================
+DOMAIN-SUFFIX,gov.my
+DOMAIN-SUFFIX,hasil.gov.my
+DOMAIN-SUFFIX,lhdn.gov.my
+DOMAIN-SUFFIX,epf.gov.my
+DOMAIN-SUFFIX,kwsp.gov.my
+DOMAIN-SUFFIX,perkeso.gov.my
+DOMAIN-SUFFIX,socso.gov.my
+DOMAIN-SUFFIX,jpj.gov.my
+DOMAIN-SUFFIX,rmp.gov.my
+DOMAIN-SUFFIX,pdrm.gov.my
+DOMAIN-SUFFIX,jpa.gov.my
+DOMAIN-SUFFIX,kln.gov.my
+DOMAIN-SUFFIX,imi.gov.my
+DOMAIN-SUFFIX,immigration.gov.my
+DOMAIN-SUFFIX,mampu.gov.my
+DOMAIN-SUFFIX,msc.com.my
+DOMAIN-SUFFIX,mdeaf.com.my
+DOMAIN-SUFFIX,miti.gov.my
+DOMAIN-SUFFIX,moh.gov.my
+DOMAIN-SUFFIX,kpkesihatan.gov.my
+DOMAIN-SUFFIX,jkm.gov.my
+DOMAIN-SUFFIX,dbkl.gov.my
+DOMAIN-SUFFIX,mpaj.gov.my
+DOMAIN-SUFFIX,mbpj.gov.my
+DOMAIN-SUFFIX,mbsp.gov.my
+DOMAIN-SUFFIX,mbjb.gov.my
+DOMAIN-SUFFIX,sprm.gov.my
+DOMAIN-SUFFIX,spr.gov.my
+DOMAIN-SUFFIX,ec.gov.my
+DOMAIN-SUFFIX,st.gov.my
+DOMAIN-SUFFIX,mcmc.gov.my
+DOMAIN-SUFFIX,sc.com.my
+DOMAIN-SUFFIX,bnm.gov.my
+DOMAIN-SUFFIX,banknegara.gov.my
+DOMAIN-SUFFIX,treasury.gov.my
+DOMAIN-SUFFIX,mof.gov.my
+DOMAIN-SUFFIX,customs.gov.my
+DOMAIN-SUFFIX,jkdm.gov.my
+DOMAIN-SUFFIX,kpdnhep.gov.my
+DOMAIN-SUFFIX,kpkt.gov.my
+DOMAIN-SUFFIX,mot.gov.my
+DOMAIN-SUFFIX,apad.gov.my
+DOMAIN-SUFFIX,spad.gov.my
+DOMAIN-SUFFIX,caac.gov.my
+DOMAIN-SUFFIX,caam.gov.my
+DOMAIN-SUFFIX,dca.gov.my
+DOMAIN-SUFFIX,ktmb.com.my
+DOMAIN-SUFFIX,prasarana.com.my
+DOMAIN-SUFFIX,myrapid.com.my
+DOMAIN-SUFFIX,rapidkl.com.my
+DOMAIN-SUFFIX,mrt.com.my
+
+# ======================================
+# 📰 新闻 / 媒体
+# ======================================
+DOMAIN-SUFFIX,astro.com.my
+DOMAIN-SUFFIX,astroawani.com
+DOMAIN-SUFFIX,astroaruna.com
+DOMAIN-SUFFIX,bernama.com
+DOMAIN-SUFFIX,thestar.com.my
+DOMAIN-SUFFIX,nst.com.my
+DOMAIN-SUFFIX,malaymail.com
+DOMAIN-SUFFIX,malaysiakini.com
+DOMAIN-SUFFIX,freemalaysiatoday.com
+DOMAIN-SUFFIX,malaysiananewsonline.com
+DOMAIN-SUFFIX,sinchew.com.my
+DOMAIN-SUFFIX,chinapress.com.my
+DOMAIN-SUFFIX,orientaldaily.com.my
+DOMAIN-SUFFIX,guangming.com.my
+DOMAIN-SUFFIX,nanyang.com.my
+DOMAIN-SUFFIX,kwongwah.com.my
+DOMAIN-SUFFIX,hmetro.com.my
+DOMAIN-SUFFIX,bharian.com.my
+DOMAIN-SUFFIX,utusan.com.my
+DOMAIN-SUFFIX,kosmo.com.my
+DOMAIN-SUFFIX,mstar.com.my
+DOMAIN-SUFFIX,ohbulan.com
+DOMAIN-SUFFIX,says.com
+DOMAIN-SUFFIX,rojakdaily.com
+DOMAIN-SUFFIX,cilisos.my
+DOMAIN-SUFFIX,lobak40.com
+DOMAIN-SUFFIX,worldofbuzz.com
+
+# 广播
+DOMAIN-SUFFIX,rtm.gov.my
+DOMAIN-SUFFIX,tv3.com.my
+DOMAIN-SUFFIX,tv9.com.my
+DOMAIN-SUFFIX,ntv7.com.my
+DOMAIN-SUFFIX,8tv.com.my
+DOMAIN-SUFFIX,tonton.com.my
+DOMAIN-SUFFIX,sooka.my
+
+# ======================================
+# 🛒 电商 / 购物
+# ======================================
+DOMAIN-SUFFIX,lazada.com.my
+DOMAIN-SUFFIX,shopee.com.my
+DOMAIN-SUFFIX,zalora.com.my
+DOMAIN-SUFFIX,mudah.my
+DOMAIN-SUFFIX,lelong.my
+DOMAIN-SUFFIX,11street.my
+DOMAIN-SUFFIX,priceworth.com.my
+DOMAIN-SUFFIX,hermo.my
+DOMAIN-SUFFIX,watsons.com.my
+DOMAIN-SUFFIX,guardian.com.my
+DOMAIN-SUFFIX,caring.com.my
+DOMAIN-SUFFIX,mydin.com.my
+DOMAIN-SUFFIX,aeon.com.my
+DOMAIN-SUFFIX,aeonbig.com.my
+DOMAIN-SUFFIX,tesco.com.my
+DOMAIN-SUFFIX,lotuss.com.my
+DOMAIN-SUFFIX,99speedmart.com.my
+DOMAIN-SUFFIX,parkson.com.my
+DOMAIN-SUFFIX,ikea.com.my
+DOMAIN-SUFFIX,courts.com.my
+DOMAIN-SUFFIX,harveys.com.my
+DOMAIN-SUFFIX,senheng.com.my
+DOMAIN-SUFFIX,senq.com.my
+DOMAIN-SUFFIX,switch.com.my
+DOMAIN-SUFFIX,machines.com.my
+DOMAIN-SUFFIX,maxis.com.my
+
+# ======================================
+# 🍔 餐饮 / 外卖
+# ======================================
+DOMAIN-SUFFIX,foodpanda.com.my
+DOMAIN-SUFFIX,grabfood.com
+DOMAIN-SUFFIX,shopeefood.com.my
+DOMAIN-SUFFIX,delivereat.my
+DOMAIN-SUFFIX,mammam.com.my
+
+# ======================================
+# 🚗 交通 / 出行
+# ======================================
+DOMAIN-SUFFIX,grab.com
+DOMAIN-SUFFIX,myairline.com.my
+DOMAIN-SUFFIX,airasia.com
+DOMAIN-SUFFIX,malaysiaairlines.com
+DOMAIN-SUFFIX,malindoair.com
+DOMAIN-SUFFIX,fireflyz.com.my
+DOMAIN-SUFFIX,plus.com.my
+DOMAIN-SUFFIX,touch-n-go.com.my
+DOMAIN-SUFFIX,besraya.com.my
+DOMAIN-SUFFIX,linkedua.com.my
+DOMAIN-SUFFIX,kliaekspres.com
+DOMAIN-SUFFIX,aerotrain.com.my
+
+# ======================================
+# 🎓 教育
+# ======================================
+DOMAIN-SUFFIX,um.edu.my
+DOMAIN-SUFFIX,upm.edu.my
+DOMAIN-SUFFIX,utm.edu.my
+DOMAIN-SUFFIX,ukm.edu.my
+DOMAIN-SUFFIX,usm.edu.my
+DOMAIN-SUFFIX,unimas.edu.my
+DOMAIN-SUFFIX,ums.edu.my
+DOMAIN-SUFFIX,upsi.edu.my
+DOMAIN-SUFFIX,uthm.edu.my
+DOMAIN-SUFFIX,utem.edu.my
+DOMAIN-SUFFIX,uitm.edu.my
+DOMAIN-SUFFIX,uiam.edu.my
+DOMAIN-SUFFIX,iium.edu.my
+DOMAIN-SUFFIX,sunway.edu.my
+DOMAIN-SUFFIX,taylors.edu.my
+DOMAIN-SUFFIX,help.edu.my
+DOMAIN-SUFFIX,mmu.edu.my
+DOMAIN-SUFFIX,apu.edu.my
+DOMAIN-SUFFIX,limkokwing.edu.my
+DOMAIN-SUFFIX,newinti.edu.my
+DOMAIN-SUFFIX,nottingham.edu.my
+DOMAIN-SUFFIX,monash.edu.my
+DOMAIN-SUFFIX,curtin.edu.my
+DOMAIN-SUFFIX,perdana.org.my
+DOMAIN-SUFFIX,moe.gov.my
+DOMAIN-SUFFIX,mqa.gov.my
+DOMAIN-SUFFIX,ptptn.gov.my
+
+# ======================================
+# 🏥 医疗 / 健康
+# ======================================
+DOMAIN-SUFFIX,khtp.com.my
+DOMAIN-SUFFIX,pantai.com.my
+DOMAIN-SUFFIX,ikhlas.com.my
+DOMAIN-SUFFIX,kpjhealth.com.my
+DOMAIN-SUFFIX,sunmedical.com.my
+DOMAIN-SUFFIX,gleneagles.com.my
+DOMAIN-SUFFIX,columbiaasiahospital.com.my
+DOMAIN-SUFFIX,normah.com.my
+DOMAIN-SUFFIX,hpmc.com.my
+DOMAIN-SUFFIX,psh.com.my
+DOMAIN-SUFFIX,mhtc.org.my
+
+# ======================================
+# 💼 商业 / 企业服务
+# ======================================
+DOMAIN-SUFFIX,ssm.com.my
+DOMAIN-SUFFIX,mdec.com.my
+DOMAIN-SUFFIX,mida.gov.my
+DOMAIN-SUFFIX,smecorp.gov.my
+DOMAIN-SUFFIX,tekun.gov.my
+DOMAIN-SUFFIX,pns.com.my
+DOMAIN-SUFFIX,matrade.gov.my
+DOMAIN-SUFFIX,mpc.com.my
+DOMAIN-SUFFIX,hrdf.com.my
+DOMAIN-SUFFIX,perkeso.gov.my
+
+# ======================================
+# 🏠 房产
+# ======================================
+DOMAIN-SUFFIX,propertyguru.com.my
+DOMAIN-SUFFIX,iproperty.com.my
+DOMAIN-SUFFIX,brickz.my
+DOMAIN-SUFFIX,edgeprop.my
+DOMAIN-SUFFIX,loanstreet.com.my
+DOMAIN-SUFFIX,napic.gov.my
+
+# ======================================
+# 🎮 娱乐 / 生活
+# ======================================
+DOMAIN-SUFFIX,gsc.com.my
+DOMAIN-SUFFIX,tgv.com.my
+DOMAIN-SUFFIX,mbo.com.my
+DOMAIN-SUFFIX,mymovies.my
+DOMAIN-SUFFIX,cinema.com.my
+DOMAIN-SUFFIX,klook.com
+DOMAIN-SUFFIX,agoda.com
+DOMAIN-SUFFIX,booking.com
+DOMAIN-SUFFIX,airbnb.com.my
+
+# ======================================
+# IP 段（马来西亚 ASN 直连）
+# ======================================
+# TM / Unifi
+IP-CIDR,1.9.0.0/16,no-resolve
+IP-CIDR,1.32.0.0/11,no-resolve
+IP-CIDR,27.110.128.0/18,no-resolve
+IP-CIDR,58.26.0.0/17,no-resolve
+IP-CIDR,60.48.0.0/13,no-resolve
+IP-CIDR,115.132.0.0/14,no-resolve
+IP-CIDR,116.71.0.0/18,no-resolve
+IP-CIDR,120.56.0.0/13,no-resolve
+IP-CIDR,175.136.128.0/18,no-resolve
+IP-CIDR,203.106.0.0/16,no-resolve
+IP-CIDR,211.25.128.0/17,no-resolve
+
+# Maxis
+IP-CIDR,175.143.128.0/18,no-resolve
+IP-CIDR,180.211.128.0/17,no-resolve
+IP-CIDR,202.185.192.0/18,no-resolve
+
+# Celcom / Digi / Axiata
+IP-CIDR,36.255.128.0/18,no-resolve
+IP-CIDR,103.27.248.0/22,no-resolve
+IP-CIDR,110.93.192.0/18,no-resolve
+
+# GEOIP 兜底
+GEOIP,MY,no-resolve
+
+# END
